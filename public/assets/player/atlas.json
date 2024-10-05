@@ -1,0 +1,27 @@
+{
+  "frames": {
+    "standing": {
+      "frame": { "x": 4, "y": 4, "w": 33, "h": 64 },
+      "sourceSize": { "w": 33, "h": 64 }
+    },
+    "walk-1": {
+      "frame": { "x": 90, "y": 4, "w": 33, "h": 64 }
+    },
+    "walk-2": {
+      "frame": { "x": 48, "y": 4, "w": 33, "h": 64 }
+    }
+  },
+  "meta": {
+    "version": "1.0.0",
+    "image": "atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 452,
+      "h": 732
+    },
+    "scale": 1
+  },
+  "animations": {
+    "walk": ["standing", "walk-1", "walk-2"]
+  }
+}
