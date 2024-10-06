@@ -3,8 +3,9 @@ import { Suspense, useState } from 'react'
 import ErrorBoundary from '@/components/ErrorBoundary'
 import { AbstractRenderer, Container, Text, TextureSource } from 'pixi.js'
 import { Background } from './components/Background'
-import { Player } from './components/Player'
+import { PlayerCharacter } from './components/PlayerCharacter'
 import { CANVAS_HEIGHT, CANVAS_WIDTH } from './constants'
+import { NonPlayerCharacter } from './components/NonPlayerCharacter'
 
 // Default global pixi settings
 TextureSource.defaultOptions.scaleMode = 'nearest'
@@ -16,7 +17,8 @@ function Game() {
   return (
     <container label="Game">
       <Background />
-      <Player />
+      <NonPlayerCharacter />
+      <PlayerCharacter />
     </container>
   )
 }
